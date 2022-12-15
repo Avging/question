@@ -6,10 +6,10 @@
 void change1(int score);
 void change2(int score);
 
-int main(void)  {
+int main(void) {
     int score;
-    scanf("%d",&score);
-    //change1(score);
+    scanf("%d", &score);
+    change1(score);
     change2(score);
 
     return 0;
@@ -17,19 +17,19 @@ int main(void)  {
 
 void change1(int score)  {
     if(score >= 90 && score <= 100)  {
-        printf("A");
+        printf("A\n");
     }
     if(score >= 80 && score < 90)  {
-        printf("B");
+        printf("B\n");
     }
     if(score >= 70 && score < 80)  {
-        printf("C");
+        printf("C\n");
     }
     if(score >= 60 && score < 70)  {
-        printf("D");
+        printf("D\n");
     }
     if(score >= 0 && score < 60)  {
-        printf("E");
+        printf("E\n");
     }
 
 }
@@ -41,22 +41,22 @@ void change2(int score)  {
     switch(score1)  {
 
         case 10:
-            printf("A");
+            printf("A\n");
             break;
         case 9:
-            printf("A");
+            printf("A\n");
             break;
         case 8:
-            printf("B");
+            printf("B\n");
             break;
         case 7:
-            printf("C");
+            printf("C\n");
             break;
         case 6:
-            printf("D");
+            printf("D\n");
             break;
         default:
-            printf("E");
+            printf("E\n");
             break;
     }
 
