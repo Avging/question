@@ -7,3 +7,4 @@ add_executable(question main.c)
 
 add_executable(time time.c)
 add_executable(main main.c)
+add_executable(score score.c)
