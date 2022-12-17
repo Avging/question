@@ -172,6 +172,39 @@ build score.exe: C_EXECUTABLE_LINKER__score_Debug CMakeFiles/score.dir/score.c.o
   TARGET_IMPLIB = libscore.dll.a
   TARGET_PDB = score.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target flowers
+
+
+#############################################
+# Order-only phony target for flowers
+
+build cmake_object_order_depends_target_flowers: phony || CMakeFiles/flowers.dir
+
+build CMakeFiles/flowers.dir/flowers.c.obj: C_COMPILER__flowers_Debug D$:/Study/cproject/question/flowers.c || cmake_object_order_depends_target_flowers
+  DEP_FILE = CMakeFiles\flowers.dir\flowers.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\flowers.dir
+  OBJECT_FILE_DIR = CMakeFiles\flowers.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target flowers
+
+
+#############################################
+# Link the executable flowers.exe
+
+build flowers.exe: C_EXECUTABLE_LINKER__flowers_Debug CMakeFiles/flowers.dir/flowers.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\flowers.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = flowers.exe
+  TARGET_IMPLIB = libflowers.dll.a
+  TARGET_PDB = flowers.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -198,6 +231,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build flowers: phony flowers.exe
+
 build main: phony main.exe
 
 build question: phony question.exe
@@ -214,7 +249,7 @@ build time: phony time.exe
 #############################################
 # Folder: D:/Study/cproject/question/cmake-build-debug
 
-build all: phony question.exe time.exe main.exe score.exe
+build all: phony question.exe time.exe main.exe score.exe flowers.exe
 
 # =============================================================================
 # Built-in targets
