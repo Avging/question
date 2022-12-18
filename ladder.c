@@ -14,9 +14,6 @@ int main(void)  {
     if(much == 0)  {
         printf("Invalid Value!");
     }
-    if(much <= 50 * 0.53)  {
-        printf("cost = %.2f",much);
-    }
     else{
         printf("cost = %.2f",much);
     }
@@ -28,7 +25,6 @@ int main(void)  {
 
 float many(float use){
     float cost;
-    float cost1;
 
     if(use < 0)  {
         return 0;
@@ -38,8 +34,8 @@ float many(float use){
         return cost;
     }
     else  {
-        cost1 = 50 * 0.53 + (use - 50) * 0.58;
-        return cost1;
+        cost = 50 * 0.53 + (use - 50) * 0.58;
+        return cost;
     }
 
 }

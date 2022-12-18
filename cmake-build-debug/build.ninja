@@ -205,6 +205,39 @@ build flowers.exe: C_EXECUTABLE_LINKER__flowers_Debug CMakeFiles/flowers.dir/flo
   TARGET_IMPLIB = libflowers.dll.a
   TARGET_PDB = flowers.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target ladder
+
+
+#############################################
+# Order-only phony target for ladder
+
+build cmake_object_order_depends_target_ladder: phony || CMakeFiles/ladder.dir
+
+build CMakeFiles/ladder.dir/ladder.c.obj: C_COMPILER__ladder_Debug D$:/Study/cproject/question/ladder.c || cmake_object_order_depends_target_ladder
+  DEP_FILE = CMakeFiles\ladder.dir\ladder.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\ladder.dir
+  OBJECT_FILE_DIR = CMakeFiles\ladder.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ladder
+
+
+#############################################
+# Link the executable ladder.exe
+
+build ladder.exe: C_EXECUTABLE_LINKER__ladder_Debug CMakeFiles/ladder.dir/ladder.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\ladder.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = ladder.exe
+  TARGET_IMPLIB = libladder.dll.a
+  TARGET_PDB = ladder.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -233,6 +266,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build flowers: phony flowers.exe
 
+build ladder: phony ladder.exe
+
 build main: phony main.exe
 
 build question: phony question.exe
@@ -249,7 +284,7 @@ build time: phony time.exe
 #############################################
 # Folder: D:/Study/cproject/question/cmake-build-debug
 
-build all: phony question.exe time.exe main.exe score.exe flowers.exe
+build all: phony question.exe time.exe main.exe score.exe flowers.exe ladder.exe
 
 # =============================================================================
 # Built-in targets
