@@ -4,12 +4,13 @@
 #include <stdio.h>
 
 int main(void)  {
-    int a[10];
+    int a[100];
     int sum = 0;
-    scanf("%d%d%d%d%d%d%d%d%d%d",&a[0],&a[1],&a[2],&a[3],&a[4],&a[5],&a[6],&a[7],&a[8],&a[9]);
-    for(int i = 0;i < 10;i++)  {
+
+    for(int i = 0;i < 100;i++)  {
+        scanf("%d",&a[i]);
         if(a[i] <= 0)  {
-            return 0;
+            break;
         }
         if(a[i] % 2 != 0)  {
             sum += a[i];
