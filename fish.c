@@ -6,18 +6,19 @@
 int main(void)  {
     int N;
     int n;
-    scanf("%d",&N);
-    n = N % 5;
 
-    if(N > 1000)  {
-        printf("杈撳叆閿欒");
+    printf("请输入一个正整数:\n");
+    scanf("%d",&N);
+
+    if(N <= 0 || N > 1000)  {
+        printf("输入错误");
         return 0;
     }
 
+    n = N % 5;
     if(n > 0 && n <= 3)  {
         printf("Fishing in day %d",N);
-    }
-    else  {
+    }else  {
         printf("Drying in day %d",N);
     }
 }
