@@ -8,7 +8,7 @@ int main(void)  {
     int N;
     int i;
     int bit,sum;
-    int Ver1,Ver2,Ver3,Ver4,Ver5,Ver6,Ver7,Ver8,Ver9,Ver10;
+    int Var1,Var2,Var3,Var4,Var5,Var6,Var7,Var8,Var9,Var10;
 
     printf("请输入一个正整数：\n");
     scanf("%d",&N);
@@ -25,16 +25,16 @@ int main(void)  {
         }
     }
 
-    Ver1 = N % 10;
-    Ver2 = N % 100 / 10;
-    Ver3 = N % 1000 / 100;
-    Ver4 = N % 10000 / 1000;
-    Ver5 = N % 100000 / 10000;
-    Ver6 = N % 1000000 / 100000;
-    Ver7 = N % 10000000 / 1000000;
-    Ver8 = N % 100000000 / 10000000;
-    Ver9 = N % 1000000000 / 100000000;
-    Ver10 = N % 10000000000 / 1000000000;
-    sum = Ver1 + Ver2 + Ver3 + Ver4 + Ver5 + Ver6 + Ver7 + Ver8 + Ver9 + Ver10;
+    Var1 = N % 10;
+    Var2 = N % 100 / 10;
+    Var3 = N % 1000 / 100;
+    Var4 = N % 10000 / 1000;
+    Var5 = N % 100000 / 10000;
+    Var6 = N % 1000000 / 100000;
+    Var7 = N % 10000000 / 1000000;
+    Var8 = N % 100000000 / 10000000;
+    Var9 = N % 1000000000 / 100000000;
+    Var10 = N % 10000000000 / 1000000000;
+    sum = Var1 + Var2 + Var3 + Var4 + Var5 + Var6 + Var7 + Var8 + Var9 + Var10;
     printf("%d",sum);
 }
