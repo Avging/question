@@ -238,6 +238,39 @@ build ladder.exe: C_EXECUTABLE_LINKER__ladder_Debug CMakeFiles/ladder.dir/ladder
   TARGET_IMPLIB = libladder.dll.a
   TARGET_PDB = ladder.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Finish
+
+
+#############################################
+# Order-only phony target for Finish
+
+build cmake_object_order_depends_target_Finish: phony || CMakeFiles/Finish.dir
+
+build CMakeFiles/Finish.dir/Finish.c.obj: C_COMPILER__Finish_Debug D$:/Study/cproject/question/Finish.c || cmake_object_order_depends_target_Finish
+  DEP_FILE = CMakeFiles\Finish.dir\Finish.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\Finish.dir
+  OBJECT_FILE_DIR = CMakeFiles\Finish.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Finish
+
+
+#############################################
+# Link the executable Finish.exe
+
+build Finish.exe: C_EXECUTABLE_LINKER__Finish_Debug CMakeFiles/Finish.dir/Finish.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Finish.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Finish.exe
+  TARGET_IMPLIB = libFinish.dll.a
+  TARGET_PDB = Finish.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -264,6 +297,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build Finish: phony Finish.exe
+
 build flowers: phony flowers.exe
 
 build ladder: phony ladder.exe
@@ -284,7 +319,7 @@ build time: phony time.exe
 #############################################
 # Folder: D:/Study/cproject/question/cmake-build-debug
 
-build all: phony question.exe time.exe main.exe score.exe flowers.exe ladder.exe
+build all: phony question.exe time.exe main.exe score.exe flowers.exe ladder.exe Finish.exe
 
 # =============================================================================
 # Built-in targets

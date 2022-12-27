@@ -4,5 +4,6 @@ D:/Study/cproject/question/cmake-build-debug/CMakeFiles/main.dir
 D:/Study/cproject/question/cmake-build-debug/CMakeFiles/score.dir
 D:/Study/cproject/question/cmake-build-debug/CMakeFiles/flowers.dir
 D:/Study/cproject/question/cmake-build-debug/CMakeFiles/ladder.dir
+D:/Study/cproject/question/cmake-build-debug/CMakeFiles/Finish.dir
 D:/Study/cproject/question/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Study/cproject/question/cmake-build-debug/CMakeFiles/rebuild_cache.dir
