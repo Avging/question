@@ -4,15 +4,15 @@
 #include <stdio.h>
 
 double P(int n,double x)  {
-    double sum;
 
     if(n == 0)  {
         return 1;
     }
     if(n == 1)  {
         return x;
-    }else  {
-
+    }
+    if( n > 1)  {
+        return ((2*n-1)*P(n-1,x) - (n-1)*P(n-2,x))/n;
     }
 
 }
