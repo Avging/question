@@ -271,6 +271,39 @@ build Finish.exe: C_EXECUTABLE_LINKER__Finish_Debug CMakeFiles/Finish.dir/Finish
   TARGET_IMPLIB = libFinish.dll.a
   TARGET_PDB = Finish.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target P
+
+
+#############################################
+# Order-only phony target for P
+
+build cmake_object_order_depends_target_P: phony || CMakeFiles/P.dir
+
+build CMakeFiles/P.dir/P.c.obj: C_COMPILER__P_Debug D$:/Study/cproject/question/P.c || cmake_object_order_depends_target_P
+  DEP_FILE = CMakeFiles\P.dir\P.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\P.dir
+  OBJECT_FILE_DIR = CMakeFiles\P.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target P
+
+
+#############################################
+# Link the executable P.exe
+
+build P.exe: C_EXECUTABLE_LINKER__P_Debug CMakeFiles/P.dir/P.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\P.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = P.exe
+  TARGET_IMPLIB = libP.dll.a
+  TARGET_PDB = P.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -299,6 +332,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build Finish: phony Finish.exe
 
+build P: phony P.exe
+
 build flowers: phony flowers.exe
 
 build ladder: phony ladder.exe
@@ -319,7 +354,7 @@ build time: phony time.exe
 #############################################
 # Folder: D:/Study/cproject/question/cmake-build-debug
 
-build all: phony question.exe time.exe main.exe score.exe flowers.exe ladder.exe Finish.exe
+build all: phony question.exe time.exe main.exe score.exe flowers.exe ladder.exe Finish.exe P.exe
 
 # =============================================================================
 # Built-in targets
