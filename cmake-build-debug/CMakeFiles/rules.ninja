@@ -12,154 +12,192 @@
 # =============================================================================
 
 #############################################
-# Rule for compiling C files.
+# Rule for compiling CXX files.
 
-rule C_COMPILER__question_Debug
+rule CXX_COMPILER__work_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
+  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
 
 
 #############################################
-# Rule for linking C executable.
+# Rule for linking CXX executable.
 
-rule C_EXECUTABLE_LINKER__question_Debug
-  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
-  description = Linking C executable $TARGET_FILE
+rule CXX_EXECUTABLE_LINKER__work_Debug
+  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
 
 #############################################
-# Rule for compiling C files.
+# Rule for compiling CXX files.
 
-rule C_COMPILER__time_Debug
+rule CXX_COMPILER__temp_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
+  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
 
 
 #############################################
-# Rule for linking C executable.
+# Rule for linking CXX executable.
 
-rule C_EXECUTABLE_LINKER__time_Debug
-  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
-  description = Linking C executable $TARGET_FILE
+rule CXX_EXECUTABLE_LINKER__temp_Debug
+  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
 
 #############################################
-# Rule for compiling C files.
+# Rule for compiling CXX files.
 
-rule C_COMPILER__main_Debug
+rule CXX_COMPILER__max_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
+  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
 
 
 #############################################
-# Rule for linking C executable.
+# Rule for linking CXX executable.
 
-rule C_EXECUTABLE_LINKER__main_Debug
-  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
-  description = Linking C executable $TARGET_FILE
+rule CXX_EXECUTABLE_LINKER__max_Debug
+  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
 
 #############################################
-# Rule for compiling C files.
+# Rule for compiling CXX files.
 
-rule C_COMPILER__score_Debug
+rule CXX_COMPILER__student_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
+  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
 
 
 #############################################
-# Rule for linking C executable.
+# Rule for linking CXX executable.
 
-rule C_EXECUTABLE_LINKER__score_Debug
-  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
-  description = Linking C executable $TARGET_FILE
+rule CXX_EXECUTABLE_LINKER__student_Debug
+  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
 
 #############################################
-# Rule for compiling C files.
+# Rule for compiling CXX files.
 
-rule C_COMPILER__flowers_Debug
+rule CXX_COMPILER__out_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
+  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
 
 
 #############################################
-# Rule for linking C executable.
+# Rule for linking CXX executable.
 
-rule C_EXECUTABLE_LINKER__flowers_Debug
-  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
-  description = Linking C executable $TARGET_FILE
+rule CXX_EXECUTABLE_LINKER__out_Debug
+  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
 
 #############################################
-# Rule for compiling C files.
+# Rule for compiling CXX files.
 
-rule C_COMPILER__ladder_Debug
+rule CXX_COMPILER__Factor_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
+  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
 
 
 #############################################
-# Rule for linking C executable.
+# Rule for linking CXX executable.
 
-rule C_EXECUTABLE_LINKER__ladder_Debug
-  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
-  description = Linking C executable $TARGET_FILE
+rule CXX_EXECUTABLE_LINKER__Factor_Debug
+  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
 
 #############################################
-# Rule for compiling C files.
+# Rule for compiling CXX files.
 
-rule C_COMPILER__Finish_Debug
+rule CXX_COMPILER__primeNumber_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
+  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
 
 
 #############################################
-# Rule for linking C executable.
+# Rule for linking CXX executable.
 
-rule C_EXECUTABLE_LINKER__Finish_Debug
-  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
-  description = Linking C executable $TARGET_FILE
+rule CXX_EXECUTABLE_LINKER__primeNumber_Debug
+  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
 
 #############################################
-# Rule for compiling C files.
+# Rule for compiling CXX files.
 
-rule C_COMPILER__P_Debug
+rule CXX_COMPILER__primitName_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
+  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
 
 
 #############################################
-# Rule for linking C executable.
+# Rule for linking CXX executable.
 
-rule C_EXECUTABLE_LINKER__P_Debug
-  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
-  description = Linking C executable $TARGET_FILE
+rule CXX_EXECUTABLE_LINKER__primitName_Debug
+  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__book_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__book_Debug
+  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__Conversion_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__Conversion_Debug
+  command = cmd.exe /C "$PRE_LINK && D:\PROGRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
 

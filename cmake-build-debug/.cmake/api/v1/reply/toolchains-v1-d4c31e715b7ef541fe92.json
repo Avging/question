@@ -10,6 +10,9 @@
 				{
 					"includeDirectories" : 
 					[
+						"D:/Program Files (x86)/CLion 2022.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++",
+						"D:/Program Files (x86)/CLion 2022.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32",
+						"D:/Program Files (x86)/CLion 2022.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward",
 						"D:/Program Files (x86)/CLion 2022.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include",
 						"D:/Program Files (x86)/CLion 2022.2.3/bin/mingw/include",
 						"D:/Program Files (x86)/CLion 2022.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed",
@@ -25,7 +28,9 @@
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : 
 					[
+						"stdc++",
 						"mingw32",
+						"gcc_s",
 						"gcc",
 						"moldname",
 						"mingwex",
@@ -37,20 +42,31 @@
 						"kernel32",
 						"iconv",
 						"mingw32",
+						"gcc_s",
 						"gcc",
 						"moldname",
 						"mingwex",
 						"kernel32"
 					]
 				},
-				"path" : "D:/Program Files (x86)/CLion 2022.2.3/bin/mingw/bin/gcc.exe",
+				"path" : "D:/Program Files (x86)/CLion 2022.2.3/bin/mingw/bin/g++.exe",
 				"version" : "11.2.0"
 			},
-			"language" : "C",
+			"language" : "CXX",
 			"sourceFileExtensions" : 
 			[
-				"c",
-				"m"
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"m",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm"
 			]
 		},
 		{

@@ -41,268 +41,334 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/Study/cproject/question/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target question
+# Object build statements for EXECUTABLE target work
 
 
 #############################################
-# Order-only phony target for question
+# Order-only phony target for work
 
-build cmake_object_order_depends_target_question: phony || CMakeFiles/question.dir
+build cmake_object_order_depends_target_work: phony || CMakeFiles/work.dir
 
-build CMakeFiles/question.dir/main.c.obj: C_COMPILER__question_Debug D$:/Study/cproject/question/main.c || cmake_object_order_depends_target_question
-  DEP_FILE = CMakeFiles\question.dir\main.c.obj.d
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\question.dir
-  OBJECT_FILE_DIR = CMakeFiles\question.dir
+build CMakeFiles/work.dir/work.c++.obj: CXX_COMPILER__work_Debug D$:/Study/cproject/question/work.c++ || cmake_object_order_depends_target_work
+  DEP_FILE = CMakeFiles\work.dir\work.c++.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\work.dir
+  OBJECT_FILE_DIR = CMakeFiles\work.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target question
+# Link build statements for EXECUTABLE target work
 
 
 #############################################
-# Link the executable question.exe
+# Link the executable work.exe
 
-build question.exe: C_EXECUTABLE_LINKER__question_Debug CMakeFiles/question.dir/main.c.obj
+build work.exe: CXX_EXECUTABLE_LINKER__work_Debug CMakeFiles/work.dir/work.c++.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\question.dir
+  OBJECT_DIR = CMakeFiles\work.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = question.exe
-  TARGET_IMPLIB = libquestion.dll.a
-  TARGET_PDB = question.exe.dbg
+  TARGET_FILE = work.exe
+  TARGET_IMPLIB = libwork.dll.a
+  TARGET_PDB = work.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target time
+# Object build statements for EXECUTABLE target temp
 
 
 #############################################
-# Order-only phony target for time
+# Order-only phony target for temp
 
-build cmake_object_order_depends_target_time: phony || CMakeFiles/time.dir
+build cmake_object_order_depends_target_temp: phony || CMakeFiles/temp.dir
 
-build CMakeFiles/time.dir/time.c.obj: C_COMPILER__time_Debug D$:/Study/cproject/question/time.c || cmake_object_order_depends_target_time
-  DEP_FILE = CMakeFiles\time.dir\time.c.obj.d
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\time.dir
-  OBJECT_FILE_DIR = CMakeFiles\time.dir
+build CMakeFiles/temp.dir/temp.cpp.obj: CXX_COMPILER__temp_Debug D$:/Study/cproject/question/temp.cpp || cmake_object_order_depends_target_temp
+  DEP_FILE = CMakeFiles\temp.dir\temp.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\temp.dir
+  OBJECT_FILE_DIR = CMakeFiles\temp.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target time
+# Link build statements for EXECUTABLE target temp
 
 
 #############################################
-# Link the executable time.exe
+# Link the executable temp.exe
 
-build time.exe: C_EXECUTABLE_LINKER__time_Debug CMakeFiles/time.dir/time.c.obj
+build temp.exe: CXX_EXECUTABLE_LINKER__temp_Debug CMakeFiles/temp.dir/temp.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\time.dir
+  OBJECT_DIR = CMakeFiles\temp.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = time.exe
-  TARGET_IMPLIB = libtime.dll.a
-  TARGET_PDB = time.exe.dbg
+  TARGET_FILE = temp.exe
+  TARGET_IMPLIB = libtemp.dll.a
+  TARGET_PDB = temp.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target main
+# Object build statements for EXECUTABLE target max
 
 
 #############################################
-# Order-only phony target for main
+# Order-only phony target for max
 
-build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
+build cmake_object_order_depends_target_max: phony || CMakeFiles/max.dir
 
-build CMakeFiles/main.dir/main.c.obj: C_COMPILER__main_Debug D$:/Study/cproject/question/main.c || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles\main.dir\main.c.obj.d
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\main.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.dir
+build CMakeFiles/max.dir/max.cpp.obj: CXX_COMPILER__max_Debug D$:/Study/cproject/question/max.cpp || cmake_object_order_depends_target_max
+  DEP_FILE = CMakeFiles\max.dir\max.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\max.dir
+  OBJECT_FILE_DIR = CMakeFiles\max.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target main
+# Link build statements for EXECUTABLE target max
 
 
 #############################################
-# Link the executable main.exe
+# Link the executable max.exe
 
-build main.exe: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.c.obj
+build max.exe: CXX_EXECUTABLE_LINKER__max_Debug CMakeFiles/max.dir/max.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_DIR = CMakeFiles\max.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = main.exe
-  TARGET_IMPLIB = libmain.dll.a
-  TARGET_PDB = main.exe.dbg
+  TARGET_FILE = max.exe
+  TARGET_IMPLIB = libmax.dll.a
+  TARGET_PDB = max.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target score
+# Object build statements for EXECUTABLE target student
 
 
 #############################################
-# Order-only phony target for score
+# Order-only phony target for student
 
-build cmake_object_order_depends_target_score: phony || CMakeFiles/score.dir
+build cmake_object_order_depends_target_student: phony || CMakeFiles/student.dir
 
-build CMakeFiles/score.dir/score.c.obj: C_COMPILER__score_Debug D$:/Study/cproject/question/score.c || cmake_object_order_depends_target_score
-  DEP_FILE = CMakeFiles\score.dir\score.c.obj.d
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\score.dir
-  OBJECT_FILE_DIR = CMakeFiles\score.dir
+build CMakeFiles/student.dir/student.cpp.obj: CXX_COMPILER__student_Debug D$:/Study/cproject/question/student.cpp || cmake_object_order_depends_target_student
+  DEP_FILE = CMakeFiles\student.dir\student.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\student.dir
+  OBJECT_FILE_DIR = CMakeFiles\student.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target score
+# Link build statements for EXECUTABLE target student
 
 
 #############################################
-# Link the executable score.exe
+# Link the executable student.exe
 
-build score.exe: C_EXECUTABLE_LINKER__score_Debug CMakeFiles/score.dir/score.c.obj
+build student.exe: CXX_EXECUTABLE_LINKER__student_Debug CMakeFiles/student.dir/student.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\score.dir
+  OBJECT_DIR = CMakeFiles\student.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = score.exe
-  TARGET_IMPLIB = libscore.dll.a
-  TARGET_PDB = score.exe.dbg
+  TARGET_FILE = student.exe
+  TARGET_IMPLIB = libstudent.dll.a
+  TARGET_PDB = student.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target flowers
+# Object build statements for EXECUTABLE target out
 
 
 #############################################
-# Order-only phony target for flowers
+# Order-only phony target for out
 
-build cmake_object_order_depends_target_flowers: phony || CMakeFiles/flowers.dir
+build cmake_object_order_depends_target_out: phony || CMakeFiles/out.dir
 
-build CMakeFiles/flowers.dir/flowers.c.obj: C_COMPILER__flowers_Debug D$:/Study/cproject/question/flowers.c || cmake_object_order_depends_target_flowers
-  DEP_FILE = CMakeFiles\flowers.dir\flowers.c.obj.d
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\flowers.dir
-  OBJECT_FILE_DIR = CMakeFiles\flowers.dir
+build CMakeFiles/out.dir/out.cpp.obj: CXX_COMPILER__out_Debug D$:/Study/cproject/question/out.cpp || cmake_object_order_depends_target_out
+  DEP_FILE = CMakeFiles\out.dir\out.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\out.dir
+  OBJECT_FILE_DIR = CMakeFiles\out.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target flowers
+# Link build statements for EXECUTABLE target out
 
 
 #############################################
-# Link the executable flowers.exe
+# Link the executable out.exe
 
-build flowers.exe: C_EXECUTABLE_LINKER__flowers_Debug CMakeFiles/flowers.dir/flowers.c.obj
+build out.exe: CXX_EXECUTABLE_LINKER__out_Debug CMakeFiles/out.dir/out.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\flowers.dir
+  OBJECT_DIR = CMakeFiles\out.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = flowers.exe
-  TARGET_IMPLIB = libflowers.dll.a
-  TARGET_PDB = flowers.exe.dbg
+  TARGET_FILE = out.exe
+  TARGET_IMPLIB = libout.dll.a
+  TARGET_PDB = out.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target ladder
+# Object build statements for EXECUTABLE target Factor
 
 
 #############################################
-# Order-only phony target for ladder
+# Order-only phony target for Factor
 
-build cmake_object_order_depends_target_ladder: phony || CMakeFiles/ladder.dir
+build cmake_object_order_depends_target_Factor: phony || CMakeFiles/Factor.dir
 
-build CMakeFiles/ladder.dir/ladder.c.obj: C_COMPILER__ladder_Debug D$:/Study/cproject/question/ladder.c || cmake_object_order_depends_target_ladder
-  DEP_FILE = CMakeFiles\ladder.dir\ladder.c.obj.d
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\ladder.dir
-  OBJECT_FILE_DIR = CMakeFiles\ladder.dir
+build CMakeFiles/Factor.dir/Factor.cpp.obj: CXX_COMPILER__Factor_Debug D$:/Study/cproject/question/Factor.cpp || cmake_object_order_depends_target_Factor
+  DEP_FILE = CMakeFiles\Factor.dir\Factor.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\Factor.dir
+  OBJECT_FILE_DIR = CMakeFiles\Factor.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target ladder
+# Link build statements for EXECUTABLE target Factor
 
 
 #############################################
-# Link the executable ladder.exe
+# Link the executable Factor.exe
 
-build ladder.exe: C_EXECUTABLE_LINKER__ladder_Debug CMakeFiles/ladder.dir/ladder.c.obj
+build Factor.exe: CXX_EXECUTABLE_LINKER__Factor_Debug CMakeFiles/Factor.dir/Factor.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\ladder.dir
+  OBJECT_DIR = CMakeFiles\Factor.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = ladder.exe
-  TARGET_IMPLIB = libladder.dll.a
-  TARGET_PDB = ladder.exe.dbg
+  TARGET_FILE = Factor.exe
+  TARGET_IMPLIB = libFactor.dll.a
+  TARGET_PDB = Factor.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target Finish
+# Object build statements for EXECUTABLE target primeNumber
 
 
 #############################################
-# Order-only phony target for Finish
+# Order-only phony target for primeNumber
 
-build cmake_object_order_depends_target_Finish: phony || CMakeFiles/Finish.dir
+build cmake_object_order_depends_target_primeNumber: phony || CMakeFiles/primeNumber.dir
 
-build CMakeFiles/Finish.dir/Finish.c.obj: C_COMPILER__Finish_Debug D$:/Study/cproject/question/Finish.c || cmake_object_order_depends_target_Finish
-  DEP_FILE = CMakeFiles\Finish.dir\Finish.c.obj.d
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\Finish.dir
-  OBJECT_FILE_DIR = CMakeFiles\Finish.dir
+build CMakeFiles/primeNumber.dir/primeNumber.cpp.obj: CXX_COMPILER__primeNumber_Debug D$:/Study/cproject/question/cmake-build-debug/primeNumber.cpp || cmake_object_order_depends_target_primeNumber
+  DEP_FILE = CMakeFiles\primeNumber.dir\primeNumber.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\primeNumber.dir
+  OBJECT_FILE_DIR = CMakeFiles\primeNumber.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Finish
+# Link build statements for EXECUTABLE target primeNumber
 
 
 #############################################
-# Link the executable Finish.exe
+# Link the executable primeNumber.exe
 
-build Finish.exe: C_EXECUTABLE_LINKER__Finish_Debug CMakeFiles/Finish.dir/Finish.c.obj
+build primeNumber.exe: CXX_EXECUTABLE_LINKER__primeNumber_Debug CMakeFiles/primeNumber.dir/primeNumber.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Finish.dir
+  OBJECT_DIR = CMakeFiles\primeNumber.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Finish.exe
-  TARGET_IMPLIB = libFinish.dll.a
-  TARGET_PDB = Finish.exe.dbg
+  TARGET_FILE = primeNumber.exe
+  TARGET_IMPLIB = libprimeNumber.dll.a
+  TARGET_PDB = primeNumber.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target P
+# Object build statements for EXECUTABLE target primitName
 
 
 #############################################
-# Order-only phony target for P
+# Order-only phony target for primitName
 
-build cmake_object_order_depends_target_P: phony || CMakeFiles/P.dir
+build cmake_object_order_depends_target_primitName: phony || CMakeFiles/primitName.dir
 
-build CMakeFiles/P.dir/P.c.obj: C_COMPILER__P_Debug D$:/Study/cproject/question/P.c || cmake_object_order_depends_target_P
-  DEP_FILE = CMakeFiles\P.dir\P.c.obj.d
-  FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\P.dir
-  OBJECT_FILE_DIR = CMakeFiles\P.dir
+build CMakeFiles/primitName.dir/primitName.cpp.obj: CXX_COMPILER__primitName_Debug D$:/Study/cproject/question/primitName.cpp || cmake_object_order_depends_target_primitName
+  DEP_FILE = CMakeFiles\primitName.dir\primitName.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\primitName.dir
+  OBJECT_FILE_DIR = CMakeFiles\primitName.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target P
+# Link build statements for EXECUTABLE target primitName
 
 
 #############################################
-# Link the executable P.exe
+# Link the executable primitName.exe
 
-build P.exe: C_EXECUTABLE_LINKER__P_Debug CMakeFiles/P.dir/P.c.obj
+build primitName.exe: CXX_EXECUTABLE_LINKER__primitName_Debug CMakeFiles/primitName.dir/primitName.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\P.dir
+  OBJECT_DIR = CMakeFiles\primitName.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = P.exe
-  TARGET_IMPLIB = libP.dll.a
-  TARGET_PDB = P.exe.dbg
+  TARGET_FILE = primitName.exe
+  TARGET_IMPLIB = libprimitName.dll.a
+  TARGET_PDB = primitName.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target book
+
+
+#############################################
+# Order-only phony target for book
+
+build cmake_object_order_depends_target_book: phony || CMakeFiles/book.dir
+
+build CMakeFiles/book.dir/book.cpp.obj: CXX_COMPILER__book_Debug D$:/Study/cproject/question/book.cpp || cmake_object_order_depends_target_book
+  DEP_FILE = CMakeFiles\book.dir\book.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\book.dir
+  OBJECT_FILE_DIR = CMakeFiles\book.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target book
+
+
+#############################################
+# Link the executable book.exe
+
+build book.exe: CXX_EXECUTABLE_LINKER__book_Debug CMakeFiles/book.dir/book.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\book.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = book.exe
+  TARGET_IMPLIB = libbook.dll.a
+  TARGET_PDB = book.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Conversion
+
+
+#############################################
+# Order-only phony target for Conversion
+
+build cmake_object_order_depends_target_Conversion: phony || CMakeFiles/Conversion.dir
+
+build CMakeFiles/Conversion.dir/Conversion.cpp.obj: CXX_COMPILER__Conversion_Debug D$:/Study/cproject/question/Conversion.cpp || cmake_object_order_depends_target_Conversion
+  DEP_FILE = CMakeFiles\Conversion.dir\Conversion.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\Conversion.dir
+  OBJECT_FILE_DIR = CMakeFiles\Conversion.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Conversion
+
+
+#############################################
+# Link the executable Conversion.exe
+
+build Conversion.exe: CXX_EXECUTABLE_LINKER__Conversion_Debug CMakeFiles/Conversion.dir/Conversion.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Conversion.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Conversion.exe
+  TARGET_IMPLIB = libConversion.dll.a
+  TARGET_PDB = Conversion.exe.dbg
 
 
 #############################################
@@ -330,21 +396,25 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build Finish: phony Finish.exe
+build Conversion: phony Conversion.exe
 
-build P: phony P.exe
+build Factor: phony Factor.exe
 
-build flowers: phony flowers.exe
+build book: phony book.exe
 
-build ladder: phony ladder.exe
+build max: phony max.exe
 
-build main: phony main.exe
+build out: phony out.exe
 
-build question: phony question.exe
+build primeNumber: phony primeNumber.exe
 
-build score: phony score.exe
+build primitName: phony primitName.exe
 
-build time: phony time.exe
+build student: phony student.exe
+
+build temp: phony temp.exe
+
+build work: phony work.exe
 
 # =============================================================================
 # Folder targets.
@@ -354,7 +424,7 @@ build time: phony time.exe
 #############################################
 # Folder: D:/Study/cproject/question/cmake-build-debug
 
-build all: phony question.exe time.exe main.exe score.exe flowers.exe ladder.exe Finish.exe P.exe
+build all: phony work.exe temp.exe max.exe student.exe out.exe Factor.exe primeNumber.exe primitName.exe book.exe Conversion.exe
 
 # =============================================================================
 # Built-in targets
@@ -363,14 +433,14 @@ build all: phony question.exe time.exe main.exe score.exe flowers.exe ladder.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake: phony
+build ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake D$:/Program$ Files$ (x86)/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake: phony
 
 
 #############################################

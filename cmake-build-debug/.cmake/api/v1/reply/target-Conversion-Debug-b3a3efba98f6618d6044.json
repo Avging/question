@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "time.exe"
+			"path" : "Conversion.exe"
 		},
 		{
-			"path" : "time.pdb"
+			"path" : "Conversion.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 16,
 				"parent" : 0
 			}
 		]
@@ -41,17 +41,17 @@
 					"fragment" : "-g"
 				},
 				{
-					"fragment" : "-std=gnu99"
+					"fragment" : "-std=gnu++11"
 				}
 			],
-			"language" : "C",
+			"language" : "CXX",
 			"languageStandard" : 
 			{
 				"backtraces" : 
 				[
 					1
 				],
-				"standard" : "99"
+				"standard" : "11"
 			},
 			"sourceIndexes" : 
 			[
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "time::@6890427a1f51a3e7e1df",
+	"id" : "Conversion::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -77,10 +77,10 @@
 				"role" : "libraries"
 			}
 		],
-		"language" : "C"
+		"language" : "CXX"
 	},
-	"name" : "time",
-	"nameOnDisk" : "time.exe",
+	"name" : "Conversion",
+	"nameOnDisk" : "Conversion.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -101,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "time.c",
+			"path" : "Conversion.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

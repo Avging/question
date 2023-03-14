@@ -15,6 +15,7 @@ int main(void)  {
     scanf("%d",&n);
     if(n < 2 || n > 10000)  {
         printf(" ‰»Î¥ÌŒÛ");
+        return 0;
     }
 
     for(i = 3;i < 10000;i++)  {
