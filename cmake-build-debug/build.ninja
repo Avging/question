@@ -436,6 +436,39 @@ build Rectangle.exe: CXX_EXECUTABLE_LINKER__Rectangle_Debug CMakeFiles/Rectangle
   TARGET_IMPLIB = libRectangle.dll.a
   TARGET_PDB = Rectangle.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Ex
+
+
+#############################################
+# Order-only phony target for Ex
+
+build cmake_object_order_depends_target_Ex: phony || CMakeFiles/Ex.dir
+
+build CMakeFiles/Ex.dir/Ex.cpp.obj: CXX_COMPILER__Ex_Debug D$:/Study/cproject/question/Ex.cpp || cmake_object_order_depends_target_Ex
+  DEP_FILE = CMakeFiles\Ex.dir\Ex.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\Ex.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ex.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Ex
+
+
+#############################################
+# Link the executable Ex.exe
+
+build Ex.exe: CXX_EXECUTABLE_LINKER__Ex_Debug CMakeFiles/Ex.dir/Ex.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Ex.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Ex.exe
+  TARGET_IMPLIB = libEx.dll.a
+  TARGET_PDB = Ex.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -466,6 +499,8 @@ build Circle: phony Circle.exe
 
 build Conversion: phony Conversion.exe
 
+build Ex: phony Ex.exe
+
 build Factor: phony Factor.exe
 
 build Rectangle: phony Rectangle.exe
@@ -494,7 +529,7 @@ build work: phony work.exe
 #############################################
 # Folder: D:/Study/cproject/question/cmake-build-debug
 
-build all: phony work.exe temp.exe max.exe student.exe out.exe Factor.exe primeNumber.exe primitName.exe book.exe Conversion.exe Circle.exe Rectangle.exe
+build all: phony work.exe temp.exe max.exe student.exe out.exe Factor.exe primeNumber.exe primitName.exe book.exe Conversion.exe Circle.exe Rectangle.exe Ex.exe
 
 # =============================================================================
 # Built-in targets
