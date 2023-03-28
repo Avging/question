@@ -28,7 +28,8 @@
 						10,
 						11,
 						12,
-						13
+						13,
+						14
 					]
 				}
 			],
@@ -56,7 +57,8 @@
 						10,
 						11,
 						12,
-						13
+						13,
+						14
 					]
 				}
 			],
@@ -95,6 +97,13 @@
 					"id" : "Rectangle::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Rectangle-Debug-f0181d69eba3136f6022.json",
 					"name" : "Rectangle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Square::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Square-Debug-cae57cdf3d93d396f9ab.json",
+					"name" : "Square",
 					"projectIndex" : 0
 				},
 				{

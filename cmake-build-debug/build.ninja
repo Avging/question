@@ -502,6 +502,39 @@ build complex.exe: CXX_EXECUTABLE_LINKER__complex_Debug CMakeFiles/complex.dir/c
   TARGET_IMPLIB = libcomplex.dll.a
   TARGET_PDB = complex.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Square
+
+
+#############################################
+# Order-only phony target for Square
+
+build cmake_object_order_depends_target_Square: phony || CMakeFiles/Square.dir
+
+build CMakeFiles/Square.dir/Square.cpp.obj: CXX_COMPILER__Square_Debug D$:/Study/cproject/question/Square.cpp || cmake_object_order_depends_target_Square
+  DEP_FILE = CMakeFiles\Square.dir\Square.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\Square.dir
+  OBJECT_FILE_DIR = CMakeFiles\Square.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Square
+
+
+#############################################
+# Link the executable Square.exe
+
+build Square.exe: CXX_EXECUTABLE_LINKER__Square_Debug CMakeFiles/Square.dir/Square.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Square.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Square.exe
+  TARGET_IMPLIB = libSquare.dll.a
+  TARGET_PDB = Square.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -538,6 +571,8 @@ build Factor: phony Factor.exe
 
 build Rectangle: phony Rectangle.exe
 
+build Square: phony Square.exe
+
 build book: phony book.exe
 
 build complex: phony complex.exe
@@ -564,7 +599,7 @@ build work: phony work.exe
 #############################################
 # Folder: D:/Study/cproject/question/cmake-build-debug
 
-build all: phony work.exe temp.exe max.exe student.exe out.exe Factor.exe primeNumber.exe primitName.exe book.exe Conversion.exe Circle.exe Rectangle.exe Ex.exe complex.exe
+build all: phony work.exe temp.exe max.exe student.exe out.exe Factor.exe primeNumber.exe primitName.exe book.exe Conversion.exe Circle.exe Rectangle.exe Ex.exe complex.exe Square.exe
 
 # =============================================================================
 # Built-in targets
