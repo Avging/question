@@ -18,7 +18,11 @@ int main() {
         }
 
         if(count == 0) {
-            cout << i << "是素数" << endl;
+            cout << i << "是素数" << "    ";
+        }
+
+        if(i % 100 == 0) {
+            cout << endl;
         }
     }
     return 0;
