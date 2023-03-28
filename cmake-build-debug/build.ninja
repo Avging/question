@@ -469,6 +469,39 @@ build Ex.exe: CXX_EXECUTABLE_LINKER__Ex_Debug CMakeFiles/Ex.dir/Ex.cpp.obj
   TARGET_IMPLIB = libEx.dll.a
   TARGET_PDB = Ex.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target complex
+
+
+#############################################
+# Order-only phony target for complex
+
+build cmake_object_order_depends_target_complex: phony || CMakeFiles/complex.dir
+
+build CMakeFiles/complex.dir/complex.cpp.obj: CXX_COMPILER__complex_Debug D$:/Study/cproject/question/complex.cpp || cmake_object_order_depends_target_complex
+  DEP_FILE = CMakeFiles\complex.dir\complex.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\complex.dir
+  OBJECT_FILE_DIR = CMakeFiles\complex.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target complex
+
+
+#############################################
+# Link the executable complex.exe
+
+build complex.exe: CXX_EXECUTABLE_LINKER__complex_Debug CMakeFiles/complex.dir/complex.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\complex.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = complex.exe
+  TARGET_IMPLIB = libcomplex.dll.a
+  TARGET_PDB = complex.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -507,6 +540,8 @@ build Rectangle: phony Rectangle.exe
 
 build book: phony book.exe
 
+build complex: phony complex.exe
+
 build max: phony max.exe
 
 build out: phony out.exe
@@ -529,7 +564,7 @@ build work: phony work.exe
 #############################################
 # Folder: D:/Study/cproject/question/cmake-build-debug
 
-build all: phony work.exe temp.exe max.exe student.exe out.exe Factor.exe primeNumber.exe primitName.exe book.exe Conversion.exe Circle.exe Rectangle.exe Ex.exe
+build all: phony work.exe temp.exe max.exe student.exe out.exe Factor.exe primeNumber.exe primitName.exe book.exe Conversion.exe Circle.exe Rectangle.exe Ex.exe complex.exe
 
 # =============================================================================
 # Built-in targets
