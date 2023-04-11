@@ -16,5 +16,6 @@ D:/Study/cproject/question/cmake-build-debug/CMakeFiles/Square.dir
 D:/Study/cproject/question/cmake-build-debug/CMakeFiles/Employee.dir
 D:/Study/cproject/question/cmake-build-debug/CMakeFiles/Call.dir
 D:/Study/cproject/question/cmake-build-debug/CMakeFiles/Shape.dir
+D:/Study/cproject/question/cmake-build-debug/CMakeFiles/Object.dir
 D:/Study/cproject/question/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Study/cproject/question/cmake-build-debug/CMakeFiles/rebuild_cache.dir

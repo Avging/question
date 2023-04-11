@@ -634,6 +634,39 @@ build Shape.exe: CXX_EXECUTABLE_LINKER__Shape_Debug CMakeFiles/Shape.dir/Shape.c
   TARGET_IMPLIB = libShape.dll.a
   TARGET_PDB = Shape.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Object
+
+
+#############################################
+# Order-only phony target for Object
+
+build cmake_object_order_depends_target_Object: phony || CMakeFiles/Object.dir
+
+build CMakeFiles/Object.dir/Object.cpp.obj: CXX_COMPILER__Object_Debug D$:/Study/cproject/question/Object.cpp || cmake_object_order_depends_target_Object
+  DEP_FILE = CMakeFiles\Object.dir\Object.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\Object.dir
+  OBJECT_FILE_DIR = CMakeFiles\Object.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Object
+
+
+#############################################
+# Link the executable Object.exe
+
+build Object.exe: CXX_EXECUTABLE_LINKER__Object_Debug CMakeFiles/Object.dir/Object.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Object.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Object.exe
+  TARGET_IMPLIB = libObject.dll.a
+  TARGET_PDB = Object.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -672,6 +705,8 @@ build Ex: phony Ex.exe
 
 build Factor: phony Factor.exe
 
+build Object: phony Object.exe
+
 build Rectangle: phony Rectangle.exe
 
 build Shape: phony Shape.exe
@@ -704,7 +739,7 @@ build work: phony work.exe
 #############################################
 # Folder: D:/Study/cproject/question/cmake-build-debug
 
-build all: phony work.exe temp.exe max.exe student.exe out.exe Factor.exe primeNumber.exe primitName.exe book.exe Conversion.exe Circle.exe Rectangle.exe Ex.exe complex.exe Square.exe Employee.exe Call.exe Shape.exe
+build all: phony work.exe temp.exe max.exe student.exe out.exe Factor.exe primeNumber.exe primitName.exe book.exe Conversion.exe Circle.exe Rectangle.exe Ex.exe complex.exe Square.exe Employee.exe Call.exe Shape.exe Object.exe
 
 # =============================================================================
 # Built-in targets
