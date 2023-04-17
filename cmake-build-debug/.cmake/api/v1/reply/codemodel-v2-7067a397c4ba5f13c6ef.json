@@ -34,7 +34,8 @@
 						16,
 						17,
 						18,
-						19
+						19,
+						20
 					]
 				}
 			],
@@ -68,7 +69,8 @@
 						16,
 						17,
 						18,
-						19
+						19,
+						20
 					]
 				}
 			],
@@ -205,6 +207,13 @@
 					"id" : "temp::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-temp-Debug-5494921ddf869e3d9eea.json",
 					"name" : "temp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-Debug-57d4f97f679b02a29c5f.json",
+					"name" : "test",
 					"projectIndex" : 0
 				},
 				{
