@@ -667,6 +667,39 @@ build Object.exe: CXX_EXECUTABLE_LINKER__Object_Debug CMakeFiles/Object.dir/Obje
   TARGET_IMPLIB = libObject.dll.a
   TARGET_PDB = Object.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Practice
+
+
+#############################################
+# Order-only phony target for Practice
+
+build cmake_object_order_depends_target_Practice: phony || CMakeFiles/Practice.dir
+
+build CMakeFiles/Practice.dir/Practice.cpp.obj: CXX_COMPILER__Practice_Debug D$:/Study/cproject/question/Practice.cpp || cmake_object_order_depends_target_Practice
+  DEP_FILE = CMakeFiles\Practice.dir\Practice.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\Practice.dir
+  OBJECT_FILE_DIR = CMakeFiles\Practice.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Practice
+
+
+#############################################
+# Link the executable Practice.exe
+
+build Practice.exe: CXX_EXECUTABLE_LINKER__Practice_Debug CMakeFiles/Practice.dir/Practice.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Practice.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Practice.exe
+  TARGET_IMPLIB = libPractice.dll.a
+  TARGET_PDB = Practice.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -707,6 +740,8 @@ build Factor: phony Factor.exe
 
 build Object: phony Object.exe
 
+build Practice: phony Practice.exe
+
 build Rectangle: phony Rectangle.exe
 
 build Shape: phony Shape.exe
@@ -739,7 +774,7 @@ build work: phony work.exe
 #############################################
 # Folder: D:/Study/cproject/question/cmake-build-debug
 
-build all: phony work.exe temp.exe max.exe student.exe out.exe Factor.exe primeNumber.exe primitName.exe book.exe Conversion.exe Circle.exe Rectangle.exe Ex.exe complex.exe Square.exe Employee.exe Call.exe Shape.exe Object.exe
+build all: phony work.exe temp.exe max.exe student.exe out.exe Factor.exe primeNumber.exe primitName.exe book.exe Conversion.exe Circle.exe Rectangle.exe Ex.exe complex.exe Square.exe Employee.exe Call.exe Shape.exe Object.exe Practice.exe
 
 # =============================================================================
 # Built-in targets
