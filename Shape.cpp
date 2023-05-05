@@ -2,8 +2,8 @@
 // Created by Han on 2023/4/10.
 //
 #include <iostream>
-
 using namespace std;
+
 const double PI = 3.1415926;
 class Shape
 {
@@ -13,21 +13,18 @@ public:
         a = m;
         b = n;
     }
-    virtual float GetArea() = 0;
+    virtual float GetArea();
 protected:
     int a, b;
 };
 class Rect :public Shape
 {
 public:
-    Rect(int m, int n);
+    Rect(int m, int n):Shape(m,n) { }
     float GetArea();
 protected:
 };
-Rect::Rect(int m, int n) :Shape(m, n)
-{
 
-}
 float Rect::GetArea()
 {
     return (a * b);
@@ -35,14 +32,11 @@ float Rect::GetArea()
 class Circle:public Shape
 {
 public:
-    Circle(int r);
+    Circle(int r) :Shape(r) {  }
     float GetArea();
 protected:
 };
-Circle::Circle(int r) :Shape(r)
-{
 
-}
 float Circle::GetArea()
 {
     return (PI * a * a);
