@@ -13,7 +13,7 @@ class complex {
             Imaginary = imaginary;
         }
 
-        void add(complex a) {
+        complex add(complex a) {
             Real = Real + a.Real;
             Imaginary = Imaginary + a.Imaginary;
         }
