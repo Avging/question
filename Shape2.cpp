@@ -46,8 +46,7 @@ float fun(Point * p) {
     cout << p->GetArea() << endl;
 }
 
-int main()
-{
+int main() {
     Rect rect(4, 5);
     Circle circle(10);
 
