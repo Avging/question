@@ -799,6 +799,39 @@ build complex2.exe: CXX_EXECUTABLE_LINKER__complex2_Debug CMakeFiles/complex2.di
   TARGET_IMPLIB = libcomplex2.dll.a
   TARGET_PDB = complex2.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target demo
+
+
+#############################################
+# Order-only phony target for demo
+
+build cmake_object_order_depends_target_demo: phony || CMakeFiles/demo.dir
+
+build CMakeFiles/demo.dir/demo.cpp.obj: CXX_COMPILER__demo_Debug D$:/Study/cproject/question/demo.cpp || cmake_object_order_depends_target_demo
+  DEP_FILE = CMakeFiles\demo.dir\demo.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\demo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target demo
+
+
+#############################################
+# Link the executable demo.exe
+
+build demo.exe: CXX_EXECUTABLE_LINKER__demo_Debug CMakeFiles/demo.dir/demo.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\demo.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = demo.exe
+  TARGET_IMPLIB = libdemo.dll.a
+  TARGET_PDB = demo.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -855,6 +888,8 @@ build complex: phony complex.exe
 
 build complex2: phony complex2.exe
 
+build demo: phony demo.exe
+
 build max: phony max.exe
 
 build out: phony out.exe
@@ -879,7 +914,7 @@ build work: phony work.exe
 #############################################
 # Folder: D:/Study/cproject/question/cmake-build-debug
 
-build all: phony work.exe temp.exe max.exe student.exe out.exe Factor.exe primeNumber.exe primitName.exe book.exe Conversion.exe Circle.exe Rectangle.exe Ex.exe complex.exe Square.exe Employee.exe Call.exe Shape.exe Object.exe Practice.exe test.exe Shape2.exe complex2.exe
+build all: phony work.exe temp.exe max.exe student.exe out.exe Factor.exe primeNumber.exe primitName.exe book.exe Conversion.exe Circle.exe Rectangle.exe Ex.exe complex.exe Square.exe Employee.exe Call.exe Shape.exe Object.exe Practice.exe test.exe Shape2.exe complex2.exe demo.exe
 
 # =============================================================================
 # Built-in targets
