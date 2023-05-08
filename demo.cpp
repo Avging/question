@@ -23,5 +23,4 @@ int main(){
         A an(1);
         an = am;
         return 0;
-
 }
