@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "primeNumber.exe"
+			"path" : "Conversion.exe"
 		},
 		{
-			"path" : "primeNumber.pdb"
+			"path" : "Conversion.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 18,
 				"parent" : 0
 			}
 		]
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "primeNumber::@6890427a1f51a3e7e1df",
+	"id" : "Conversion::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "primeNumber",
-	"nameOnDisk" : "primeNumber.exe",
+	"name" : "Conversion",
+	"nameOnDisk" : "Conversion.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -101,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "cmake-build-debug/primeNumber.cpp",
+			"path" : "Conversion.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

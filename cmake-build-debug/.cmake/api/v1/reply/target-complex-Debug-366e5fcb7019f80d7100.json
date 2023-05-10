@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "out.exe"
+			"path" : "complex.exe"
 		},
 		{
-			"path" : "out.pdb"
+			"path" : "complex.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 11,
+				"line" : 22,
 				"parent" : 0
 			}
 		]
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "out::@6890427a1f51a3e7e1df",
+	"id" : "complex::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "out",
-	"nameOnDisk" : "out.exe",
+	"name" : "complex",
+	"nameOnDisk" : "complex.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -101,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "out.cpp",
+			"path" : "complex.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

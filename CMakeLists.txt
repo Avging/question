@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 3.23)
 project(question CXX)
+project(question C)
 
 set(CMAKE_CXX_STANDARD 11)
 
 
+add_executable(ladder ladder.c)
 add_executable(work work.c++)
 add_executable(temp temp.cpp)
 add_executable(max max.cpp)

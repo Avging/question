@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Circle.exe"
+			"path" : "Shape.exe"
 		},
 		{
-			"path" : "Circle.pdb"
+			"path" : "Shape.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 17,
+				"line" : 26,
 				"parent" : 0
 			}
 		]
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "Circle::@6890427a1f51a3e7e1df",
+	"id" : "Shape::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Circle",
-	"nameOnDisk" : "Circle.exe",
+	"name" : "Shape",
+	"nameOnDisk" : "Shape.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -101,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Circle.cpp",
+			"path" : "Shape.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

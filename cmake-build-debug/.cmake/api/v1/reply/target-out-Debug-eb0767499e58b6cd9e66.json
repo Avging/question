@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Square.exe"
+			"path" : "out.exe"
 		},
 		{
-			"path" : "Square.pdb"
+			"path" : "out.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 21,
+				"line" : 13,
 				"parent" : 0
 			}
 		]
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "Square::@6890427a1f51a3e7e1df",
+	"id" : "out::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Square",
-	"nameOnDisk" : "Square.exe",
+	"name" : "out",
+	"nameOnDisk" : "out.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -101,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Square.cpp",
+			"path" : "out.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

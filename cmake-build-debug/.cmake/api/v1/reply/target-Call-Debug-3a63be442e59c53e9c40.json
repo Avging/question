@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Shape2.exe"
+			"path" : "Call.exe"
 		},
 		{
-			"path" : "Shape2.pdb"
+			"path" : "Call.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 28,
+				"line" : 25,
 				"parent" : 0
 			}
 		]
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "Shape2::@6890427a1f51a3e7e1df",
+	"id" : "Call::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Shape2",
-	"nameOnDisk" : "Shape2.exe",
+	"name" : "Call",
+	"nameOnDisk" : "Call.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -101,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Shape2.cpp",
+			"path" : "Call.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

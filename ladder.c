@@ -1,7 +1,7 @@
 //
 // Created by Han on 2022/12/17.
 //
-#include <stdio.h>
+#include<stdio.h>
 
 float many(float use);
 
